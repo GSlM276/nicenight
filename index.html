@@ -1,0 +1,86 @@
+<!--
+mapa de onde achar comidas as comidas, receita -
+filme e onde assistir 
+e recomendaçoes de jogos 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATE NIGHT</title>
+    <link rel="stylesheet" href="index.css">
+    <head>
+
+</head>
+</head>
+<body>
+<div id="confirmBox">
+    <p>Você confirma que tem mais de 18 anos?</p>
+    <button id="sim">Sou maior de 18</button>
+    <button id="nao">Sou menor de 18</button>
+</div>
+<h1 style="text-align:center;">NICE NIGHT</h1>
+  
+  <div class="container">
+    <div class="item">
+    <div class="box" id="food-box">
+    <img id="food-img" src="imagens/interroga.png" alt="">
+    </div>
+    <p>O que comer?</p>
+    <button onclick="mudarFood()">Comida</button>
+    </div>
+
+    <div class="item">
+    <div class="box" id="make-box">
+    <img id="make-img" src="imagens/interroga.png" alt="">
+    </div>
+    <p>O que fazer?</p>
+    <button onclick="mudarMake()"> Faremos </button>
+    </div>
+
+    <div class="item">
+    <div class="box" id="after-box">
+    <img id="after-img" src="imagens/interroga.png" alt="">
+    </div>
+    <p>Depois disso?</p>
+    <button onclick="mudarAfter()">Aleatorio</button>
+    </div>
+        <div class="item">
+    <div class="box" id="final-box">
+    <img id="final-img" src="imagens/interroga.png" alt="">
+    </div>
+    <p>Final....</p>
+    <button onclick="mudarFinal()">Final Feliz</button>
+    </div>
+  </div>
+
+  <div class="btn">
+    <button  onclick="rodarTudo()">Girar Todos</button>
+  </div>
+  </div>
+  <section>
+  <button onclick="filmes()" >Ver filme</button>
+  <button onclick="Series()" >Ver Series</button>
+  <h2 id="tes"></h2>
+  </section>
+  <section>
+  <div id="generos">
+  <h3>Filmes por genero</h3>
+  <button onclick="drama()">DRAMA</button>
+  <button onclick="açao()">Acão</button>
+  <button onclick="comedia()">comedia</button>
+  <button onclick="romance()">romançe</button>
+  <button onclick="terror()">Terror</button>
+  <button onclick="Ficção()">Ficção Cientifica</button>
+  <button onclick="infantil()">Infantis</button>
+  <button onclick="Fantasia()">Infantis</button>
+  <div id="tre">Seu filme</div>
+</div>
+
+  
+  <script src="index.js"></script>
+</body>
+</html>
+
