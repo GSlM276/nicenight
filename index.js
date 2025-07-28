@@ -50,8 +50,8 @@ function mudarAfter() {
   document.getElementById('after-img').src = getRandomImage(afterImgs);
 }
 function mudarFinal() {
-    if (!maiorDeIdade) return;
-    document.getElementById('final-img').src = getRandomImage(finalimg);
+   //if (!maiorDeIdade) return;
+    //document.getElementById('final-img').src = getRandomImage(finalimg);
 }
 
   
@@ -59,8 +59,8 @@ function rodarTudo(){
   document.getElementById('food-img').src = getRandomImage(foodImgs);
   document.getElementById('make-img').src = getRandomImage(makeImgs);
   document.getElementById('after-img').src = getRandomImage(afterImgs);
-  if (!maiorDeIdade) return;
-    document.getElementById('final-img').src = getRandomImage(finalimg);
+  //if (!maiorDeIdade) return;
+    //document.getElementById('final-img').src = getRandomImage(finalimg);
 
 
 }
