@@ -138,7 +138,7 @@ const filmesT = [
 function filmes() {
   const indiceAleatorio = Math.floor(Math.random() * filmesT.length);
   const nomeSorteado = filmesT[indiceAleatorio];
-  document.getElementById("tes").innerText = nomeSorteado;
+  document.getElementById("tre").innerText = nomeSorteado;
 }
 
 const filmesDrama = [
@@ -203,46 +203,6 @@ const filmesDrama = [
   "Estrelas na Terra",
   "Depois do Casamento"
 ];
-
-const seriest = [
-  "Breaking Bad - Netflix",
-  "Stranger Things - Netflix",
-  "Game of Thrones - HBO Max",
-  "The Witcher - Netflix",
-  "The Office - Netflix",
-  "Friends - HBO Max",
-  "Better Call Saul - Netflix",
-  "Dark - Netflix",
-  "Peaky Blinders - Netflix",
-  "The Boys - Prime Video",
-  "Black Mirror - Netflix",
-  "Narcos - Netflix",
-  "Brooklyn Nine-Nine - Netflix",
-  "The Mandalorian - Disney+",
-  "The Last of Us - HBO Max",
-  "Chernobyl - HBO Max",
-  "Dexter - Star+",
-  "Lost - Disney+",
-  "Vikings - Prime Video",
-  "House of the Dragon - HBO Max",
-  "Prison Break - Prime Video",
-  "The Walking Dead - Star+",
-  "Suits - Netflix",
-  "Lucifer - Netflix",
-  "Euphoria - HBO Max",
-  "Sherlock - Netflix",
-  "Mr. Robot - Prime Video",
-  "Rick and Morty - HBO Max",
-  "Arcane - Netflix"
-];
-
-
-function Series() {
-  const indiceAleatorio = Math.floor(Math.random() * seriest.length);
-  const nomeSorteado = seriest[indiceAleatorio];
-  document.getElementById("tes").innerText = nomeSorteado;
-}
-
 
 function drama() {
   const indiceAleatorio = Math.floor(Math.random() * filmesDrama.length);
