@@ -30,6 +30,7 @@ const foodImgs = gerarCaminhos('imagens/food/', 9, ['.jpeg']);
 const makeImgs = gerarCaminhos('imagens/make/', 5, ['.jpeg']); 
 const afterImgs = gerarCaminhos('imagens/after/', 5, ['.jpeg']);
 const finalimg = gerarCaminhos('imagens/final/', 15, ['.jpg', ]);
+const blockimg = gerarCaminhos('imagens/block/', 1, ['.jpg']);
 
 // Função utilitária para sortear imagem aleatória
 function getRandomImage(images) {
@@ -50,19 +51,27 @@ function mudarAfter() {
   document.getElementById('after-img').src = getRandomImage(afterImgs);
 }
 function mudarFinal() {
-   //if (!maiorDeIdade) return;
-    //document.getElementById('final-img').src = getRandomImage(finalimg);
+  if (maiorDeIdade === true) {
+    document.getElementById('final-img').src = getRandomImage(finalimg);
+  } else {
+    document.getElementById('final-img').src = 'imagens/block/block.jpg'; // ex: imagem bloqueada
+  }
 }
 
+
   
-function rodarTudo(){
-  document.getElementById('food-img').src = getRandomImage(foodImgs);
-  document.getElementById('make-img').src = getRandomImage(makeImgs);
-  document.getElementById('after-img').src = getRandomImage(afterImgs);
-  //if (!maiorDeIdade) return;
-    //document.getElementById('final-img').src = getRandomImage(finalimg);
-
-
+function rodarTudo() {
+  if (maiorDeIdade === true) {
+    document.getElementById('food-img').src = getRandomImage(foodImgs);
+    document.getElementById('make-img').src = getRandomImage(makeImgs);
+    document.getElementById('after-img').src = getRandomImage(afterImgs); 
+    document.getElementById('final-img').src = getRandomImage(finalimg);
+  } else {
+    document.getElementById('food-img').src = getRandomImage(foodImgs);
+    document.getElementById('make-img').src = getRandomImage(makeImgs);
+    document.getElementById('after-img').src = getRandomImage(afterImgs);
+    document.getElementById('final-img').src = 'imagens/block/block.jpg'; // ex: imagem bloqueada
+  }
 }
 
 const filmesT = [ 
