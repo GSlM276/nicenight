@@ -26,10 +26,12 @@ function gerarCaminhos(base, quantidade, extensoes = ['.jpg',  '.jpeg']) {
 }
 
 // Arrays de imagens por categoria
-const foodImgs = gerarCaminhos('imagens/food/', 9, ['.jpeg']);
-const makeImgs = gerarCaminhos('imagens/make/', 5, ['.jpeg']); 
-const afterImgs = gerarCaminhos('imagens/after/', 5, ['.jpeg']);
-const finalimg = gerarCaminhos('imagens/final/', 15, ['.jpg', ]);
+const Etapa1 = gerarCaminhos('imagens/food/', 9, ['.jpeg']);
+const Etapa2 = gerarCaminhos('imagens/make/', 5, ['.jpeg']); 
+const Etapa3 = gerarCaminhos('imagens/after/', 5, ['.jpeg']);
+const Etapa4 = gerarCaminhos('imagens/final/', 15, ['.jpg', ]);
+const Etapa5 = gerarCaminhos('imagens/final/', 15, ['.jpg', ]);
+const Etapa6 = gerarCaminhos('imagens/final/', 15, ['.jpg', ]);
 const blockimg = gerarCaminhos('imagens/block/', 1, ['.jpg']);
 
 // Função utilitária para sortear imagem aleatória
