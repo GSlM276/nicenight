@@ -42,21 +42,21 @@ function getRandomImage(images) {
 
 // Funções para mudar as imagens no DOM
 function mudarFood() {
-  document.getElementById('food-img').src = getRandomImage(foodImgs);
+  document.getElementById('Etapa1').src = getRandomImage(Etapa1);
 }
 
 function mudarMake() {
-  document.getElementById('make-img').src = getRandomImage(makeImgs);
+  document.getElementById('Etapa2').src = getRandomImage(Etapa2);
 }
 
 function mudarAfter() {
-  document.getElementById('after-img').src = getRandomImage(afterImgs);
+  document.getElementById('Etapa3').src = getRandomImage(Etapa3);
 }
 function mudarFinal() {
   if (maiorDeIdade === true) {
-    document.getElementById('final-img').src = getRandomImage(finalimg);
+    document.getElementById('Etapa4').src = getRandomImage(Etapa4);
   } else {
-    document.getElementById('final-img').src = 'imagens/block/block.jpg'; // ex: imagem bloqueada
+    document.getElementById('Etapa4').src = 'imagens/block/block.jpg'; // ex: imagem bloqueada
   }
 }
 
@@ -64,15 +64,15 @@ function mudarFinal() {
   
 function rodarTudo() {
   if (maiorDeIdade === true) {
-    document.getElementById('food-img').src = getRandomImage(foodImgs);
-    document.getElementById('make-img').src = getRandomImage(makeImgs);
-    document.getElementById('after-img').src = getRandomImage(afterImgs); 
-    document.getElementById('final-img').src = getRandomImage(finalimg);
+    document.getElementById('Etapa1').src = getRandomImage(Etapa1);
+    document.getElementById('Etapa2').src = getRandomImage(Etapa2);
+    document.getElementById('Etapa3').src = getRandomImage(Etapa3); 
+    document.getElementById('Etapa4').src = getRandomImage(Etapa4);
   } else {
-    document.getElementById('food-img').src = getRandomImage(foodImgs);
-    document.getElementById('make-img').src = getRandomImage(makeImgs);
-    document.getElementById('after-img').src = getRandomImage(afterImgs);
-    document.getElementById('final-img').src = 'imagens/block/block.jpg'; // ex: imagem bloqueada
+    document.getElementById('Etapa1').src = getRandomImage(Etapa1);
+    document.getElementById('Etapa2').src = getRandomImage(Etapa2);
+    document.getElementById('Etapa3').src = getRandomImage(Etapa3); 
+    document.getElementById('Etapa4').src = 'imagens/block/block.jpg'; // ex: imagem bloqueada
   }
 }
 
